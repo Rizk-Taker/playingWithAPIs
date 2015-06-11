@@ -1,0 +1,581 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0929F111C088341AEC4CCDF5 /* libPods-playingWithAPIs.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 64D03BBC1B61A9E8CF0FE94E /* libPods-playingWithAPIs.a */; };
+		3D135FA31B23CBF500A6DEA9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FA21B23CBF500A6DEA9 /* main.m */; };
+		3D135FA61B23CBF500A6DEA9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FA51B23CBF500A6DEA9 /* AppDelegate.m */; };
+		3D135FA91B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FA71B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld */; };
+		3D135FAF1B23CBF500A6DEA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FAD1B23CBF500A6DEA9 /* Main.storyboard */; };
+		3D135FB11B23CBF500A6DEA9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FB01B23CBF500A6DEA9 /* Images.xcassets */; };
+		3D135FB41B23CBF500A6DEA9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FB21B23CBF500A6DEA9 /* LaunchScreen.xib */; };
+		3D135FC01B23CBF500A6DEA9 /* playingWithAPIsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FBF1B23CBF500A6DEA9 /* playingWithAPIsTests.m */; };
+		3D135FCC1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FCA1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m */; };
+		3D135FD01B23D7FD00A6DEA9 /* API.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FCF1B23D7FD00A6DEA9 /* API.m */; };
+		3D135FD31B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D135FD21B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m */; };
+		3D135FD51B24B2B800A6DEA9 /* SpotifyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD41B24B2B800A6DEA9 /* SpotifyLogo.png */; };
+		3D135FD81B24B31C00A6DEA9 /* GoogleMapsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */; };
+		3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */; };
+		3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */; };
+		3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033551B2649DF0011E223 /* TwilioLogo.png */; };
+		3DB033581B270D9A0011E223 /* SpotifyLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033571B270D9A0011E223 /* SpotifyLogox2.png */; };
+		3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033591B2782590011E223 /* GoogleMapsLogox2.png */; };
+		3DB0335C1B2783A50011E223 /* VenmoLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0335B1B2783A50011E223 /* VenmoLogox2.png */; };
+		3DB0335E1B2785180011E223 /* GoogleMapsLogoTransBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0335D1B2785180011E223 /* GoogleMapsLogoTransBack.png */; };
+		3DB033601B2788090011E223 /* TwilioLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0335F1B2788090011E223 /* TwilioLogox2.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D135FBA1B23CBF500A6DEA9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D135F951B23CBF400A6DEA9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D135F9C1B23CBF500A6DEA9;
+			remoteInfo = playingWithAPIs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3D135F9D1B23CBF500A6DEA9 /* playingWithAPIs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playingWithAPIs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D135FA11B23CBF500A6DEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D135FA21B23CBF500A6DEA9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3D135FA41B23CBF500A6DEA9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3D135FA51B23CBF500A6DEA9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3D135FA81B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = playingWithAPIs.xcdatamodel; sourceTree = "<group>"; };
+		3D135FAE1B23CBF500A6DEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D135FB01B23CBF500A6DEA9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3D135FB31B23CBF500A6DEA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		3D135FB91B23CBF500A6DEA9 /* playingWithAPIsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = playingWithAPIsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D135FBE1B23CBF500A6DEA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D135FBF1B23CBF500A6DEA9 /* playingWithAPIsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = playingWithAPIsTests.m; sourceTree = "<group>"; };
+		3D135FC91B23CCF800A6DEA9 /* APIHomeScreenTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHomeScreenTableViewController.h; sourceTree = "<group>"; };
+		3D135FCA1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHomeScreenTableViewController.m; sourceTree = "<group>"; };
+		3D135FCE1B23D7FD00A6DEA9 /* API.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = API.h; sourceTree = "<group>"; };
+		3D135FCF1B23D7FD00A6DEA9 /* API.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = API.m; sourceTree = "<group>"; };
+		3D135FD11B249EE400A6DEA9 /* APIHomeScreenTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIHomeScreenTableViewCell.h; sourceTree = "<group>"; };
+		3D135FD21B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIHomeScreenTableViewCell.m; sourceTree = "<group>"; };
+		3D135FD41B24B2B800A6DEA9 /* SpotifyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SpotifyLogo.png; path = ../../Desktop/SpotifyLogo.png; sourceTree = "<group>"; };
+		3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogo.png; path = ../../Desktop/GoogleMapsLogo.png; sourceTree = "<group>"; };
+		3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogo.png; path = ../../Desktop/VenmoLogo.png; sourceTree = "<group>"; };
+		3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
+		3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
+		3DB033551B2649DF0011E223 /* TwilioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwilioLogo.png; path = ../../Desktop/TwilioLogo.png; sourceTree = "<group>"; };
+		3DB033571B270D9A0011E223 /* SpotifyLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SpotifyLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/SpotifyLogox2.png"; sourceTree = "<group>"; };
+		3DB033591B2782590011E223 /* GoogleMapsLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/GoogleMapsLogox2.png"; sourceTree = "<group>"; };
+		3DB0335B1B2783A50011E223 /* VenmoLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogox2.png; path = ../../Desktop/VenmoLogox2.png; sourceTree = "<group>"; };
+		3DB0335D1B2785180011E223 /* GoogleMapsLogoTransBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogoTransBack.png; path = ../../Downloads/GoogleMapsLogoTransBack.png; sourceTree = "<group>"; };
+		3DB0335F1B2788090011E223 /* TwilioLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwilioLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/TwilioLogox2.png"; sourceTree = "<group>"; };
+		47DB56D538A19F60F457646F /* Pods-playingWithAPIs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playingWithAPIs.release.xcconfig"; path = "Pods/Target Support Files/Pods-playingWithAPIs/Pods-playingWithAPIs.release.xcconfig"; sourceTree = "<group>"; };
+		64D03BBC1B61A9E8CF0FE94E /* libPods-playingWithAPIs.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-playingWithAPIs.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		843C1ECBD05BAC6C9CF4DBDF /* Pods-playingWithAPIs.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playingWithAPIs.debug.xcconfig"; path = "Pods/Target Support Files/Pods-playingWithAPIs/Pods-playingWithAPIs.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D135F9A1B23CBF500A6DEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0929F111C088341AEC4CCDF5 /* libPods-playingWithAPIs.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D135FB61B23CBF500A6DEA9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D135F941B23CBF400A6DEA9 = {
+			isa = PBXGroup;
+			children = (
+				3D135F9F1B23CBF500A6DEA9 /* playingWithAPIs */,
+				3D135FBC1B23CBF500A6DEA9 /* playingWithAPIsTests */,
+				3D135F9E1B23CBF500A6DEA9 /* Products */,
+				937D8614C27ADF346097CC58 /* Pods */,
+				A79DE9C6EB37E8AD96790357 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3D135F9E1B23CBF500A6DEA9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D135F9D1B23CBF500A6DEA9 /* playingWithAPIs.app */,
+				3D135FB91B23CBF500A6DEA9 /* playingWithAPIsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D135F9F1B23CBF500A6DEA9 /* playingWithAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				3D135FA51B23CBF500A6DEA9 /* AppDelegate.m */,
+				3D135FC91B23CCF800A6DEA9 /* APIHomeScreenTableViewController.h */,
+				3D135FCA1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m */,
+				3D135FD11B249EE400A6DEA9 /* APIHomeScreenTableViewCell.h */,
+				3D135FD21B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m */,
+				3D135FA41B23CBF500A6DEA9 /* AppDelegate.h */,
+				3D135FCE1B23D7FD00A6DEA9 /* API.h */,
+				3D135FCF1B23D7FD00A6DEA9 /* API.m */,
+				3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */,
+				3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */,
+				3D135FD61B24B2BE00A6DEA9 /* APILogos */,
+				3D135FAD1B23CBF500A6DEA9 /* Main.storyboard */,
+				3D135FB01B23CBF500A6DEA9 /* Images.xcassets */,
+				3D135FB21B23CBF500A6DEA9 /* LaunchScreen.xib */,
+				3D135FA71B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld */,
+				3D135FA01B23CBF500A6DEA9 /* Supporting Files */,
+			);
+			path = playingWithAPIs;
+			sourceTree = "<group>";
+		};
+		3D135FA01B23CBF500A6DEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D135FA11B23CBF500A6DEA9 /* Info.plist */,
+				3D135FA21B23CBF500A6DEA9 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D135FBC1B23CBF500A6DEA9 /* playingWithAPIsTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D135FBF1B23CBF500A6DEA9 /* playingWithAPIsTests.m */,
+				3D135FBD1B23CBF500A6DEA9 /* Supporting Files */,
+			);
+			path = playingWithAPIsTests;
+			sourceTree = "<group>";
+		};
+		3D135FBD1B23CBF500A6DEA9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3D135FBE1B23CBF500A6DEA9 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3D135FD61B24B2BE00A6DEA9 /* APILogos */ = {
+			isa = PBXGroup;
+			children = (
+				3D135FD41B24B2B800A6DEA9 /* SpotifyLogo.png */,
+				3DB0335B1B2783A50011E223 /* VenmoLogox2.png */,
+				3DB0335F1B2788090011E223 /* TwilioLogox2.png */,
+				3DB0335D1B2785180011E223 /* GoogleMapsLogoTransBack.png */,
+				3DB033571B270D9A0011E223 /* SpotifyLogox2.png */,
+				3DB033551B2649DF0011E223 /* TwilioLogo.png */,
+				3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */,
+				3DB033591B2782590011E223 /* GoogleMapsLogox2.png */,
+				3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */,
+			);
+			name = APILogos;
+			sourceTree = "<group>";
+		};
+		937D8614C27ADF346097CC58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				843C1ECBD05BAC6C9CF4DBDF /* Pods-playingWithAPIs.debug.xcconfig */,
+				47DB56D538A19F60F457646F /* Pods-playingWithAPIs.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A79DE9C6EB37E8AD96790357 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64D03BBC1B61A9E8CF0FE94E /* libPods-playingWithAPIs.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D135F9C1B23CBF500A6DEA9 /* playingWithAPIs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D135FC31B23CBF500A6DEA9 /* Build configuration list for PBXNativeTarget "playingWithAPIs" */;
+			buildPhases = (
+				54DE82115B9B8FDBB99004D5 /* Check Pods Manifest.lock */,
+				3D135F991B23CBF500A6DEA9 /* Sources */,
+				3D135F9A1B23CBF500A6DEA9 /* Frameworks */,
+				3D135F9B1B23CBF500A6DEA9 /* Resources */,
+				0761038C0CFD7B34704A8253 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = playingWithAPIs;
+			productName = playingWithAPIs;
+			productReference = 3D135F9D1B23CBF500A6DEA9 /* playingWithAPIs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D135FB81B23CBF500A6DEA9 /* playingWithAPIsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D135FC61B23CBF500A6DEA9 /* Build configuration list for PBXNativeTarget "playingWithAPIsTests" */;
+			buildPhases = (
+				3D135FB51B23CBF500A6DEA9 /* Sources */,
+				3D135FB61B23CBF500A6DEA9 /* Frameworks */,
+				3D135FB71B23CBF500A6DEA9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D135FBB1B23CBF500A6DEA9 /* PBXTargetDependency */,
+			);
+			name = playingWithAPIsTests;
+			productName = playingWithAPIsTests;
+			productReference = 3D135FB91B23CBF500A6DEA9 /* playingWithAPIsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D135F951B23CBF400A6DEA9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Cooper Veysey";
+				TargetAttributes = {
+					3D135F9C1B23CBF500A6DEA9 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					3D135FB81B23CBF500A6DEA9 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 3D135F9C1B23CBF500A6DEA9;
+					};
+				};
+			};
+			buildConfigurationList = 3D135F981B23CBF400A6DEA9 /* Build configuration list for PBXProject "playingWithAPIs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D135F941B23CBF400A6DEA9;
+			productRefGroup = 3D135F9E1B23CBF500A6DEA9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D135F9C1B23CBF500A6DEA9 /* playingWithAPIs */,
+				3D135FB81B23CBF500A6DEA9 /* playingWithAPIsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D135F9B1B23CBF500A6DEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D135FAF1B23CBF500A6DEA9 /* Main.storyboard in Resources */,
+				3DB0335E1B2785180011E223 /* GoogleMapsLogoTransBack.png in Resources */,
+				3D135FD51B24B2B800A6DEA9 /* SpotifyLogo.png in Resources */,
+				3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */,
+				3D135FB41B23CBF500A6DEA9 /* LaunchScreen.xib in Resources */,
+				3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */,
+				3DB033601B2788090011E223 /* TwilioLogox2.png in Resources */,
+				3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */,
+				3DB033581B270D9A0011E223 /* SpotifyLogox2.png in Resources */,
+				3D135FB11B23CBF500A6DEA9 /* Images.xcassets in Resources */,
+				3DB0335C1B2783A50011E223 /* VenmoLogox2.png in Resources */,
+				3D135FD81B24B31C00A6DEA9 /* GoogleMapsLogo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D135FB71B23CBF500A6DEA9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0761038C0CFD7B34704A8253 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-playingWithAPIs/Pods-playingWithAPIs-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54DE82115B9B8FDBB99004D5 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D135F991B23CBF500A6DEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */,
+				3D135FA91B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld in Sources */,
+				3D135FA61B23CBF500A6DEA9 /* AppDelegate.m in Sources */,
+				3D135FA31B23CBF500A6DEA9 /* main.m in Sources */,
+				3D135FD31B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m in Sources */,
+				3D135FCC1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m in Sources */,
+				3D135FD01B23D7FD00A6DEA9 /* API.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D135FB51B23CBF500A6DEA9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D135FC01B23CBF500A6DEA9 /* playingWithAPIsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D135FBB1B23CBF500A6DEA9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D135F9C1B23CBF500A6DEA9 /* playingWithAPIs */;
+			targetProxy = 3D135FBA1B23CBF500A6DEA9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D135FAD1B23CBF500A6DEA9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D135FAE1B23CBF500A6DEA9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D135FB21B23CBF500A6DEA9 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D135FB31B23CBF500A6DEA9 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D135FC11B23CBF500A6DEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3D135FC21B23CBF500A6DEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D135FC41B23CBF500A6DEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 843C1ECBD05BAC6C9CF4DBDF /* Pods-playingWithAPIs.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+				);
+				INFOPLIST_FILE = playingWithAPIs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3D135FC51B23CBF500A6DEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47DB56D538A19F60F457646F /* Pods-playingWithAPIs.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+				);
+				INFOPLIST_FILE = playingWithAPIs/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3D135FC71B23CBF500A6DEA9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = playingWithAPIsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playingWithAPIs.app/playingWithAPIs";
+			};
+			name = Debug;
+		};
+		3D135FC81B23CBF500A6DEA9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = playingWithAPIsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/playingWithAPIs.app/playingWithAPIs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D135F981B23CBF400A6DEA9 /* Build configuration list for PBXProject "playingWithAPIs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D135FC11B23CBF500A6DEA9 /* Debug */,
+				3D135FC21B23CBF500A6DEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D135FC31B23CBF500A6DEA9 /* Build configuration list for PBXNativeTarget "playingWithAPIs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D135FC41B23CBF500A6DEA9 /* Debug */,
+				3D135FC51B23CBF500A6DEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D135FC61B23CBF500A6DEA9 /* Build configuration list for PBXNativeTarget "playingWithAPIsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D135FC71B23CBF500A6DEA9 /* Debug */,
+				3D135FC81B23CBF500A6DEA9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3D135FA71B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3D135FA81B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodel */,
+			);
+			currentVersion = 3D135FA81B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodel */;
+			path = playingWithAPIs.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3D135F951B23CBF400A6DEA9 /* Project object */;
+}
