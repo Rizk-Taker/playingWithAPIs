@@ -1,10 +1,13 @@
 PODS:
   - Google-Maps-iOS-SDK (1.9.2)
+  - TwilioSDK (1.2.3)
 
 DEPENDENCIES:
   - Google-Maps-iOS-SDK (~> 1.9.2)
+  - TwilioSDK (~> 1.2)
 
 SPEC CHECKSUMS:
   Google-Maps-iOS-SDK: 4c008abdb68e03ae125c7f674be841d369e2b3de
+  TwilioSDK: a9aeead884e926858a38b6013e583ea0443b1f1c
 
 COCOAPODS: 0.35.0

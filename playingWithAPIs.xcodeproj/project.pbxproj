@@ -22,6 +22,9 @@
 		3D135FD81B24B31C00A6DEA9 /* GoogleMapsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */; };
 		3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */; };
 		3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */; };
+		3DA151591B29F04400F674EA /* TwilioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151581B29F04400F674EA /* TwilioViewController.m */; };
+		3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */; };
+		3DA1515D1B2A0E8100F674EA /* dialButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */; };
 		3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033551B2649DF0011E223 /* TwilioLogo.png */; };
 		3DB033581B270D9A0011E223 /* SpotifyLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033571B270D9A0011E223 /* SpotifyLogox2.png */; };
 		3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033591B2782590011E223 /* GoogleMapsLogox2.png */; };
@@ -64,6 +67,10 @@
 		3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogo.png; path = ../../Desktop/VenmoLogo.png; sourceTree = "<group>"; };
 		3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
 		3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
+		3DA151571B29F04400F674EA /* TwilioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioViewController.h; sourceTree = "<group>"; };
+		3DA151581B29F04400F674EA /* TwilioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwilioViewController.m; sourceTree = "<group>"; };
+		3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangupButtonImage.png; sourceTree = "<group>"; };
+		3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialButtonImage.png; sourceTree = "<group>"; };
 		3DB033551B2649DF0011E223 /* TwilioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwilioLogo.png; path = ../../Desktop/TwilioLogo.png; sourceTree = "<group>"; };
 		3DB033571B270D9A0011E223 /* SpotifyLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SpotifyLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/SpotifyLogox2.png"; sourceTree = "<group>"; };
 		3DB033591B2782590011E223 /* GoogleMapsLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/GoogleMapsLogox2.png"; sourceTree = "<group>"; };
@@ -127,6 +134,10 @@
 				3D135FCF1B23D7FD00A6DEA9 /* API.m */,
 				3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */,
 				3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */,
+				3DA151571B29F04400F674EA /* TwilioViewController.h */,
+				3DA151581B29F04400F674EA /* TwilioViewController.m */,
+				3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */,
+				3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */,
 				3D135FD61B24B2BE00A6DEA9 /* APILogos */,
 				3D135FAD1B23CBF500A6DEA9 /* Main.storyboard */,
 				3D135FB01B23CBF500A6DEA9 /* Images.xcassets */,
@@ -283,6 +294,7 @@
 				3D135FD51B24B2B800A6DEA9 /* SpotifyLogo.png in Resources */,
 				3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */,
 				3D135FB41B23CBF500A6DEA9 /* LaunchScreen.xib in Resources */,
+				3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */,
 				3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */,
 				3DB033601B2788090011E223 /* TwilioLogox2.png in Resources */,
 				3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */,
@@ -290,6 +302,7 @@
 				3D135FB11B23CBF500A6DEA9 /* Images.xcassets in Resources */,
 				3DB0335C1B2783A50011E223 /* VenmoLogox2.png in Resources */,
 				3D135FD81B24B31C00A6DEA9 /* GoogleMapsLogo.png in Resources */,
+				3DA1515D1B2A0E8100F674EA /* dialButtonImage.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +353,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA151591B29F04400F674EA /* TwilioViewController.m in Sources */,
 				3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */,
 				3D135FA91B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld in Sources */,
 				3D135FA61B23CBF500A6DEA9 /* AppDelegate.m in Sources */,

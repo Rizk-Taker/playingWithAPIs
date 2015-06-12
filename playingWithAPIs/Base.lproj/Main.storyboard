@@ -63,7 +63,6 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="APILogo" destination="Guu-uQ-0aS" id="rFn-Jf-I8Z"/>
-                                    <segue destination="dA5-gU-tiJ" kind="show" identifier="GoogleMapsStoryboardSegueIdentifier" id="azO-fv-hr3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -73,10 +72,62 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="ph1-Y6-IOx"/>
+                    <connections>
+                        <segue destination="dA5-gU-tiJ" kind="show" identifier="GoogleMapsStoryboardSegueIdentifier" id="ZNi-gX-Twd"/>
+                        <segue destination="az3-cp-DID" kind="show" identifier="TwilioStoryboardSegueIdentifier" id="qQD-SQ-CnN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpf-xM-sD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="895" y="-122"/>
+        </scene>
+        <!--Twilio View Controller-->
+        <scene sceneID="ewG-Bw-Wcs">
+            <objects>
+                <viewController id="az3-cp-DID" customClass="TwilioViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gJu-f4-fSs"/>
+                        <viewControllerLayoutGuide type="bottom" id="atW-3l-NQ4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yPS-Au-jg3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSG-Aj-6cB">
+                                <rect key="frame" x="254" y="258" width="919" height="846"/>
+                                <state key="normal" title="Hangup" image="hangupButtonImage.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="hangupButtonTapped:" destination="az3-cp-DID" eventType="touchUpInside" id="HJi-bo-M0U"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u24-re-SqE">
+                                <rect key="frame" x="164" y="335" width="226" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mrk-5d-cJQ">
+                                <rect key="frame" x="262" y="176" width="886" height="846"/>
+                                <state key="normal" title="Dial" image="dialButtonImage.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="callButtonTapped:" destination="az3-cp-DID" eventType="touchUpInside" id="mxh-8u-ugJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="callButton" destination="mrk-5d-cJQ" id="KQK-xu-VTE"/>
+                        <outlet property="hangupButton" destination="FSG-Aj-6cB" id="gna-IZ-ukC"/>
+                        <outlet property="numberField" destination="u24-re-SqE" id="JxX-5C-u3d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dso-kr-dSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1643" y="-131"/>
         </scene>
         <!--Google Maps View Controller-->
         <scene sceneID="gpU-ns-aqE">
@@ -116,4 +167,8 @@
             <point key="canvasLocation" x="83" y="-122"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dialButtonImage.png" width="855" height="846"/>
+        <image name="hangupButtonImage.png" width="855" height="846"/>
+    </resources>
 </document>
