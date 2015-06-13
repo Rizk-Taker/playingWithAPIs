@@ -10,6 +10,7 @@
 #import "APIHomeScreenTableViewController.h"
 #import "API.h"
 #import "GoogleMaps.h"
+#import <Venmo-iOS-SDK/Venmo.h>
 
 @interface AppDelegate ()
 
@@ -55,7 +56,18 @@
     
     [GMSServices provideAPIKey:@"AIzaSyDzQY6dLGDGD65vIwPImPx-R_A-QOiSUC8"];
     
+    [Venmo startWithAppId:@"2682" secret:@"Z96uc9MW7XSDPSESGDUATDCx4YjdusEL" name:@"playingWithAPIs"];
+
+    
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    if ([[Venmo sharedInstance] handleOpenURL:url]) {
+        return YES;
+    }
+    // You can add your app-specific url handling code here if needed
+    return NO;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

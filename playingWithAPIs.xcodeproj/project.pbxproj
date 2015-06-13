@@ -21,6 +21,8 @@
 		3D135FD51B24B2B800A6DEA9 /* SpotifyLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD41B24B2B800A6DEA9 /* SpotifyLogo.png */; };
 		3D135FD81B24B31C00A6DEA9 /* GoogleMapsLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */; };
 		3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */; };
+		3D188EB81B2B539A00E66A0B /* VenmoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D188EB71B2B539A00E66A0B /* VenmoViewController.m */; };
+		3D188EBA1B2BD77700E66A0B /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D188EB91B2BD77600E66A0B /* Spotify.framework */; };
 		3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */; };
 		3DA151591B29F04400F674EA /* TwilioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151581B29F04400F674EA /* TwilioViewController.m */; };
 		3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */; };
@@ -65,6 +67,9 @@
 		3D135FD41B24B2B800A6DEA9 /* SpotifyLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SpotifyLogo.png; path = ../../Desktop/SpotifyLogo.png; sourceTree = "<group>"; };
 		3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogo.png; path = ../../Desktop/GoogleMapsLogo.png; sourceTree = "<group>"; };
 		3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogo.png; path = ../../Desktop/VenmoLogo.png; sourceTree = "<group>"; };
+		3D188EB61B2B539A00E66A0B /* VenmoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VenmoViewController.h; sourceTree = "<group>"; };
+		3D188EB71B2B539A00E66A0B /* VenmoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VenmoViewController.m; sourceTree = "<group>"; };
+		3D188EB91B2BD77600E66A0B /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
 		3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
 		3DA151571B29F04400F674EA /* TwilioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioViewController.h; sourceTree = "<group>"; };
@@ -88,6 +93,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0929F111C088341AEC4CCDF5 /* libPods-playingWithAPIs.a in Frameworks */,
+				3D188EBA1B2BD77700E66A0B /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,14 +130,16 @@
 		3D135F9F1B23CBF500A6DEA9 /* playingWithAPIs */ = {
 			isa = PBXGroup;
 			children = (
+				3D135FA41B23CBF500A6DEA9 /* AppDelegate.h */,
 				3D135FA51B23CBF500A6DEA9 /* AppDelegate.m */,
 				3D135FC91B23CCF800A6DEA9 /* APIHomeScreenTableViewController.h */,
 				3D135FCA1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m */,
 				3D135FD11B249EE400A6DEA9 /* APIHomeScreenTableViewCell.h */,
 				3D135FD21B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m */,
-				3D135FA41B23CBF500A6DEA9 /* AppDelegate.h */,
 				3D135FCE1B23D7FD00A6DEA9 /* API.h */,
 				3D135FCF1B23D7FD00A6DEA9 /* API.m */,
+				3D188EB61B2B539A00E66A0B /* VenmoViewController.h */,
+				3D188EB71B2B539A00E66A0B /* VenmoViewController.m */,
 				3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */,
 				3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */,
 				3DA151571B29F04400F674EA /* TwilioViewController.h */,
@@ -202,6 +210,7 @@
 		A79DE9C6EB37E8AD96790357 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3D188EB91B2BD77600E66A0B /* Spotify.framework */,
 				64D03BBC1B61A9E8CF0FE94E /* libPods-playingWithAPIs.a */,
 			);
 			name = Frameworks;
@@ -358,6 +367,7 @@
 				3D135FA91B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld in Sources */,
 				3D135FA61B23CBF500A6DEA9 /* AppDelegate.m in Sources */,
 				3D135FA31B23CBF500A6DEA9 /* main.m in Sources */,
+				3D188EB81B2B539A00E66A0B /* VenmoViewController.m in Sources */,
 				3D135FD31B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m in Sources */,
 				3D135FCC1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m in Sources */,
 				3D135FD01B23D7FD00A6DEA9 /* API.m in Sources */,
@@ -489,7 +499,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = playingWithAPIs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -504,7 +514,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Pods/GoogleMaps/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = playingWithAPIs/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

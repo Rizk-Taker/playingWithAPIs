@@ -4,12 +4,32 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Pods-playingWithAPIs-CMDQueryStringSerialization.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-playingWithAPIs-Google-Maps-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-playingWithAPIs-SSKeychain.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-playingWithAPIs-TwilioSDK.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-playingWithAPIs-VENCore.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-playingWithAPIs-Venmo-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +42,37 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>4A8909D04CB3137ECD48BE5F</key>
+		<key>1E82637561A240478449C95D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EAFD6494A7A3C8ABF954D464</key>
+		<key>43D9A860A63666F1A1B0DA46</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FA3164A8A7C050B14413637E</key>
+		<key>4D59A349F6E2CA9C9CD0BD35</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>82B51DFF0E086F2B0E840EB0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BA98375452960007EFE30614</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DF90661AB4EB57BA9D844321</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E55FF21082EB71C334A13EF3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
