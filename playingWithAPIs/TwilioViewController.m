@@ -9,7 +9,7 @@
 #import "TwilioViewController.h"
 #import "TwilioClient.h"
 
-@interface TwilioViewController ()
+@interface TwilioViewController ()<TCDeviceDelegate>
 {
     TCDevice* _phone;
     TCConnection* _connection;
@@ -21,6 +21,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+#if TARGET_IPHONE_SIMULATOR
+    NSString *name = @"tommy";
+#else
+    NSString *name = @"jenny";
+#endif
     
     self.hangupButton.hidden = YES;
     self.callButton.hidden = NO;
@@ -177,25 +183,47 @@
     
     [self.view addConstraint:hangupButtonCenteringXConstraint];
 
-    NSURL *url = [NSURL URLWithString:@"http://blooming-castle-9501.herokuapp.com/token"];
+    NSString *urlString = [NSString stringWithFormat:@"http://blooming-castle-9501.herokuapp.com/token?client=%@", name];
+    NSURL *url = [NSURL URLWithString:urlString];
     NSError *error = nil;
     NSString *token = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
     if (token == nil) {
         NSLog(@"Error retrieving token: %@", [error localizedDescription]);
     } else {
-        _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:nil];
+        _phone = [[TCDevice alloc] initWithCapabilityToken:token delegate:self];
     }
     // Do any additional setup after loading the view.
 }
 
 -(void)connect:(NSDictionary*)parameters delegate: (id<TCDeviceDelegate>)delegate{
     
-    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (void)device:(TCDevice *)device didReceiveIncomingConnection:(TCConnection *)connection
+{
+    NSLog(@"Incoming connection from: %@", [connection parameters][@"From"]);
+    if (device.state == TCDeviceStateBusy) {
+        [connection reject];
+    } else {
+        [connection accept];
+        _connection = connection;
+    }
+}
+
+- (void)deviceDidStartListeningForIncomingConnections:(TCDevice*)device
+{
+    NSLog(@"Device: %@ deviceDidStartListeningForIncomingConnections", device);
+}
+
+- (void)device:(TCDevice *)device didStopListeningForIncomingConnections:(NSError *)error
+{
+    NSLog(@"Device: %@ didStopListeningForIncomingConnections: %@", device, error);
+}
+
 
 /*
 #pragma mark - Navigation
