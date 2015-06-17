@@ -76,6 +76,7 @@
                         <segue destination="dA5-gU-tiJ" kind="show" identifier="GoogleMapsStoryboardSegueIdentifier" id="ZNi-gX-Twd"/>
                         <segue destination="az3-cp-DID" kind="show" identifier="TwilioStoryboardSegueIdentifier" id="qQD-SQ-CnN"/>
                         <segue destination="Uio-j8-buh" kind="show" identifier="VenmoStoryboardSegueIdentifier" id="blJ-y5-nbE"/>
+                        <segue destination="L0F-H2-mJu" kind="show" identifier="SpotifyStoryboardSegueIdentifier" id="PMN-tn-4S5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpf-xM-sD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -179,6 +180,67 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cvd-Yt-QUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1643" y="645"/>
+        </scene>
+        <!--Spotify View Controller-->
+        <scene sceneID="F86-4d-hYO">
+            <objects>
+                <viewController id="L0F-H2-mJu" customClass="SpotifyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ol8-LK-AWN"/>
+                        <viewControllerLayoutGuide type="bottom" id="QjF-Tp-mlA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="VhP-Tq-aTK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="songTitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d32-TP-esB">
+                                <rect key="frame" x="279" y="296" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artistNameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnY-eI-RJK">
+                                <rect key="frame" x="279" y="337" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfn-cV-LGZ">
+                                <rect key="frame" x="186" y="82" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-h3-B73">
+                                <rect key="frame" x="283" y="424" width="88" height="30"/>
+                                <state key="normal" title="playButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButtonTapped:" destination="L0F-H2-mJu" eventType="touchUpInside" id="rTB-dK-HaH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-Am-d1s">
+                                <rect key="frame" x="283" y="452" width="88" height="30"/>
+                                <state key="normal" title="pauseButton">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9I8-0Q-Gte">
+                                <rect key="frame" x="290" y="136" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="albumCoverImage" destination="vfn-cV-LGZ" id="Lvi-Xk-e84"/>
+                        <outlet property="artistNameLabel" destination="bnY-eI-RJK" id="ruu-qq-XRD"/>
+                        <outlet property="pauseButton" destination="eRh-Am-d1s" id="cl7-Nt-S0u"/>
+                        <outlet property="playButton" destination="s0u-h3-B73" id="GNd-G6-pwN"/>
+                        <outlet property="songTitleLabel" destination="d32-TP-esB" id="Wsf-Z8-iWA"/>
+                        <outlet property="spotifySpinner" destination="9I8-0Q-Gte" id="WNk-un-S4D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ze-8B-hfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1657" y="1378"/>
         </scene>
         <!--Google Maps View Controller-->
         <scene sceneID="gpU-ns-aqE">

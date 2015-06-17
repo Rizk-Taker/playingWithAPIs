@@ -11,8 +11,12 @@
 #import "API.h"
 #import "GoogleMaps.h"
 #import <Venmo-iOS-SDK/Venmo.h>
+#import <Spotify/Spotify.h>
+#import "SpotifyViewController.h"
 
 @interface AppDelegate ()
+
+@property (nonatomic,strong) SpotifyViewController *something;
 
 @end
 
@@ -57,15 +61,41 @@
     [GMSServices provideAPIKey:@"AIzaSyDzQY6dLGDGD65vIwPImPx-R_A-QOiSUC8"];
     
     [Venmo startWithAppId:@"2682" secret:@"Z96uc9MW7XSDPSESGDUATDCx4YjdusEL" name:@"playingWithAPIs"];
-
     
+    [[SPTAuth defaultInstance] setClientID:@"499d570312f34ad2a590cac79eac9aca"];
+    [[SPTAuth defaultInstance] setRedirectURL:[NSURL URLWithString:@"playingwithapis://callback"]];
+    [[SPTAuth defaultInstance] setRequestedScopes:@[SPTAuthStreamingScope]];
+
     return YES;
 }
 
 - (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    NSLog(@"just before _something");
+    _something = [[SpotifyViewController alloc]init];
+    
+    NSLog(@"just after _something");
     if ([[Venmo sharedInstance] handleOpenURL:url]) {
         return YES;
     }
+    NSLog(@"just before if");
+    if ([[SPTAuth defaultInstance] canHandleURL:url]) {
+        NSLog(@"just before SPTAuth defaultInstance");
+        [[SPTAuth defaultInstance] handleAuthCallbackWithTriggeredAuthURL:url callback:^(NSError *error, SPTSession *session) {
+            
+            if (error != nil) {
+                NSLog(@"*** Auth error: %@", error);
+                return;
+            }
+            NSLog(@"just before _something playUsingSession:session");
+            // Call the -playUsingSession: method to play a track
+            [_something playUsingSession:session];
+        }];
+        
+        NSLog(@"just before return YES;");
+        return YES;
+    }
+    NSLog(@"before else return NO");
     // You can add your app-specific url handling code here if needed
     return NO;
 }

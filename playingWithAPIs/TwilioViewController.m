@@ -177,7 +177,7 @@
     
     [self.view addConstraint:hangupButtonCenteringXConstraint];
 
-    NSURL *url = [NSURL URLWithString:@"http://blooming-castle-9501.herokuapp.com"];
+    NSURL *url = [NSURL URLWithString:@"http://blooming-castle-9501.herokuapp.com/token"];
     NSError *error = nil;
     NSString *token = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:&error];
     if (token == nil) {
@@ -211,8 +211,11 @@
     
     self.callButton.hidden = YES;
     self.hangupButton.hidden = NO;
+    NSLog(@"before NSDictionary *params");
     NSDictionary *params = @{@"To": self.numberField.text};
+    NSLog(@"before _connection = [_phone connect:params delegate:nil];");
     _connection = [_phone connect:params delegate:nil];
+    NSLog(@"after _connection = [_phone connect:params delegate:nil];");
     
 }
 
