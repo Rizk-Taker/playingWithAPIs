@@ -40,28 +40,6 @@
     
     [self.contentView addConstraint:APILogoBottomConstraint];
     
-//    NSLayoutConstraint *APILogoLeftConstraint =
-//    [NSLayoutConstraint constraintWithItem:self.APILogo
-//                                 attribute:NSLayoutAttributeLeft
-//                                 relatedBy:NSLayoutRelationEqual
-//                                    toItem:self.contentView
-//                                 attribute:NSLayoutAttributeLeft
-//                                multiplier:1.0
-//                                  constant:100];
-//    
-//    [self.contentView addConstraint:APILogoLeftConstraint];
-//    
-//    NSLayoutConstraint *APILogoRightConstraint =
-//    [NSLayoutConstraint constraintWithItem:self.APILogo
-//                                 attribute:NSLayoutAttributeRight
-//                                 relatedBy:NSLayoutRelationEqual
-//                                    toItem:self.contentView
-//                                 attribute:NSLayoutAttributeRight
-//                                multiplier:1.0
-//                                  constant:-50];
-//    
-//    [self.contentView addConstraint:APILogoRightConstraint];
-    
     NSLayoutConstraint *APILogoWidthConstraint =
     [NSLayoutConstraint constraintWithItem:self.APILogo
                                  attribute:NSLayoutAttributeWidth

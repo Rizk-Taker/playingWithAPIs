@@ -49,9 +49,9 @@
     api.fileNameOfLogo = @"VenmoLogox2.png";
     [_APIs addObject:api];
     
-    UITabBarController *tabBarController = (UITabBarController *)self.window.rootViewController;
-    UINavigationController *navigationController = [tabBarController viewControllers][0];
-    APIHomeScreenTableViewController *apiHomeScreenTableViewController = [navigationController viewControllers][0];
+    
+    UINavigationController *navigationController = (UINavigationController *) self.window.rootViewController;
+    APIHomeScreenTableViewController *apiHomeScreenTableViewController = [navigationController.viewControllers objectAtIndex:0];
     apiHomeScreenTableViewController.APIs = _APIs;
     
 //    _APIs = [NSMutableArray arrayWithObjects:@"Spotify", @"Google Maps", @"Venmo", nil];

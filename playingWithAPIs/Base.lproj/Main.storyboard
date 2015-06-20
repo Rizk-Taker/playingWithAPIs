@@ -1,47 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6tM-84-zBJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="nWp-Qr-rVM">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
-        <scene sceneID="MM5-s6-Eoh">
-            <objects>
-                <viewController id="1DK-sj-Lyn" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="YlB-VD-vMN"/>
-                        <viewControllerLayoutGuide type="bottom" id="ycW-dF-8dP"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="b3h-oy-UeZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Me5-cw-evp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BsR-kt-dGs" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="83" y="604"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="S9W-Vb-Tsm">
-            <objects>
-                <tabBarController id="6tM-84-zBJ" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="Uip-Th-JpE">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="NZU-Yt-RuS" kind="relationship" relationship="viewControllers" id="BzL-as-ZSn"/>
-                        <segue destination="1DK-sj-Lyn" kind="relationship" relationship="viewControllers" id="UdL-Ra-hEm"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Eoc-qI-dme" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-737" y="272"/>
-        </scene>
         <!--Home Screen Table View Controller-->
         <scene sceneID="mxn-vz-3JA">
             <objects>
@@ -81,7 +43,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vpf-xM-sD6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="895" y="-122"/>
+            <point key="canvasLocation" x="1707" y="-122"/>
         </scene>
         <!--Twilio View Controller-->
         <scene sceneID="ewG-Bw-Wcs">
@@ -129,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dso-kr-dSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1643" y="-131"/>
+            <point key="canvasLocation" x="2455" y="-131"/>
         </scene>
         <!--Venmo View Controller-->
         <scene sceneID="5gZ-sm-NSg">
@@ -193,49 +155,74 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="songTitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d32-TP-esB">
-                                <rect key="frame" x="279" y="296" width="112" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artistNameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnY-eI-RJK">
-                                <rect key="frame" x="279" y="337" width="126" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfn-cV-LGZ">
-                                <rect key="frame" x="186" y="82" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ymY-WB-gkT">
+                                <rect key="frame" x="0.0" y="64" width="600" height="486"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-h3-B73">
-                                <rect key="frame" x="283" y="424" width="88" height="30"/>
-                                <state key="normal" title="playButton">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0u-h3-B73" userLabel="playButton">
+                                <rect key="frame" x="230" y="401" width="140" height="52"/>
+                                <state key="normal" image="spotifyPlayButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="playButtonTapped:" destination="L0F-H2-mJu" eventType="touchUpInside" id="rTB-dK-HaH"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-Am-d1s">
-                                <rect key="frame" x="283" y="452" width="88" height="30"/>
-                                <state key="normal" title="pauseButton">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wlo-zY-VuJ" userLabel="skipButton">
+                                <rect key="frame" x="328" y="423" width="68" height="22"/>
+                                <state key="normal" image="spotifySkipButton.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCe-de-uh3" userLabel="previousButton">
+                                <rect key="frame" x="207" y="423" width="68" height="22"/>
+                                <state key="normal" image="spotifyPreviousButton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="songTitleLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d32-TP-esB">
+                                <rect key="frame" x="250" y="293" width="112" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="artistNameLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnY-eI-RJK">
+                                <rect key="frame" x="243" y="322" width="126" height="21"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vfn-cV-LGZ" userLabel="albumCoverImage">
+                                <rect key="frame" x="186" y="82" width="240" height="170"/>
+                            </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="9I8-0Q-Gte">
                                 <rect key="frame" x="290" y="136" width="20" height="20"/>
                             </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="KKd-tu-LQb">
+                                <rect key="frame" x="225" y="375" width="152" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eRh-Am-d1s" userLabel="pauseButton">
+                                <rect key="frame" x="222" y="442" width="156" height="52"/>
+                                <state key="normal" image="spotifyPauseButton.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pauseButtonTapped:" destination="L0F-H2-mJu" eventType="touchUpInside" id="pvV-hD-c6M"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="albumCoverImage" destination="vfn-cV-LGZ" id="Lvi-Xk-e84"/>
                         <outlet property="artistNameLabel" destination="bnY-eI-RJK" id="ruu-qq-XRD"/>
+                        <outlet property="backgroundView" destination="ymY-WB-gkT" id="Oas-Q4-Gta"/>
                         <outlet property="pauseButton" destination="eRh-Am-d1s" id="cl7-Nt-S0u"/>
                         <outlet property="playButton" destination="s0u-h3-B73" id="GNd-G6-pwN"/>
                         <outlet property="songTitleLabel" destination="d32-TP-esB" id="Wsf-Z8-iWA"/>
+                        <outlet property="spotifyPreviousButton" destination="LCe-de-uh3" id="9m6-Ue-S6h"/>
+                        <outlet property="spotifySkipButton" destination="wlo-zY-VuJ" id="RM3-xL-dEU"/>
                         <outlet property="spotifySpinner" destination="9I8-0Q-Gte" id="WNk-un-S4D"/>
+                        <outlet property="trackProgressView" destination="KKd-tu-LQb" id="4tA-8T-6OJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ze-8B-hfr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -260,28 +247,31 @@
             </objects>
             <point key="canvasLocation" x="1643" y="-872"/>
         </scene>
-        <!--APIs-->
-        <scene sceneID="HN7-jb-7FI">
+        <!--Navigation Controller-->
+        <scene sceneID="0aD-hK-QWE">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NZU-Yt-RuS" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="APIs" id="UK2-Cd-MCe"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nWp-Qr-rVM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qK9-o3-ht9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XJr-ae-mQP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="cle-5F-K8K" kind="relationship" relationship="rootViewController" id="07c-6y-Znw"/>
+                        <segue destination="cle-5F-K8K" kind="relationship" relationship="rootViewController" id="7wE-WI-WPb"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zC0-gF-EPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Zm-do-gHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="83" y="-122"/>
+            <point key="canvasLocation" x="895" y="-122"/>
         </scene>
     </scenes>
     <resources>
         <image name="dialButtonImage.png" width="855" height="846"/>
         <image name="hangupButtonImage.png" width="855" height="846"/>
+        <image name="spotifyPauseButton.png" width="776" height="776"/>
+        <image name="spotifyPlayButton.png" width="776" height="776"/>
+        <image name="spotifyPreviousButton.png" width="479" height="682"/>
+        <image name="spotifySkipButton.png" width="479" height="682"/>
     </resources>
 </document>

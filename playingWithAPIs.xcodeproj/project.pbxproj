@@ -25,6 +25,11 @@
 		3D188EBA1B2BD77700E66A0B /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D188EB91B2BD77600E66A0B /* Spotify.framework */; };
 		3D188EBC1B2C5C9600E66A0B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D188EBB1B2C5C9600E66A0B /* AVFoundation.framework */; };
 		3D188EBE1B2C5CA100E66A0B /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D188EBD1B2C5CA100E66A0B /* SystemConfiguration.framework */; };
+		3D6A8AAF1B331AE000585236 /* bossAlbumCover.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AAE1B331AE000585236 /* bossAlbumCover.jpg */; };
+		3D6A8ABE1B3353BF00585236 /* spotifyPreviousButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8ABC1B3353BF00585236 /* spotifyPreviousButton.png */; };
+		3D6A8ABF1B3353BF00585236 /* spotifySkipButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */; };
+		3D6A8AC21B3353FF00585236 /* spotifyPauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */; };
+		3D6A8AC31B3353FF00585236 /* spotifyPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */; };
 		3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */; };
 		3DA151591B29F04400F674EA /* TwilioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151581B29F04400F674EA /* TwilioViewController.m */; };
 		3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */; };
@@ -75,6 +80,11 @@
 		3D188EB91B2BD77600E66A0B /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
 		3D188EBB1B2C5C9600E66A0B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		3D188EBD1B2C5CA100E66A0B /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3D6A8AAE1B331AE000585236 /* bossAlbumCover.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bossAlbumCover.jpg; sourceTree = "<group>"; };
+		3D6A8ABC1B3353BF00585236 /* spotifyPreviousButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifyPreviousButton.png; sourceTree = "<group>"; };
+		3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifySkipButton.png; sourceTree = "<group>"; };
+		3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifyPauseButton.png; sourceTree = "<group>"; };
+		3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifyPlayButton.png; sourceTree = "<group>"; };
 		3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
 		3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
 		3DA151571B29F04400F674EA /* TwilioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioViewController.h; sourceTree = "<group>"; };
@@ -157,6 +167,11 @@
 				3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */,
 				3DCE329F1B2D187E005C9A92 /* SpotifyViewController.h */,
 				3DCE32A01B2D187E005C9A92 /* SpotifyViewController.m */,
+				3D6A8ABC1B3353BF00585236 /* spotifyPreviousButton.png */,
+				3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */,
+				3D6A8AAE1B331AE000585236 /* bossAlbumCover.jpg */,
+				3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */,
+				3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */,
 				3D135FD61B24B2BE00A6DEA9 /* APILogos */,
 				3D135FAD1B23CBF500A6DEA9 /* Main.storyboard */,
 				3D135FB01B23CBF500A6DEA9 /* Images.xcassets */,
@@ -311,17 +326,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D6A8AAF1B331AE000585236 /* bossAlbumCover.jpg in Resources */,
 				3D135FAF1B23CBF500A6DEA9 /* Main.storyboard in Resources */,
 				3DB0335E1B2785180011E223 /* GoogleMapsLogoTransBack.png in Resources */,
 				3D135FD51B24B2B800A6DEA9 /* SpotifyLogo.png in Resources */,
 				3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */,
+				3D6A8ABF1B3353BF00585236 /* spotifySkipButton.png in Resources */,
 				3D135FB41B23CBF500A6DEA9 /* LaunchScreen.xib in Resources */,
 				3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */,
 				3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */,
 				3DB033601B2788090011E223 /* TwilioLogox2.png in Resources */,
+				3D6A8ABE1B3353BF00585236 /* spotifyPreviousButton.png in Resources */,
 				3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */,
 				3DB033581B270D9A0011E223 /* SpotifyLogox2.png in Resources */,
+				3D6A8AC21B3353FF00585236 /* spotifyPauseButton.png in Resources */,
 				3D135FB11B23CBF500A6DEA9 /* Images.xcassets in Resources */,
+				3D6A8AC31B3353FF00585236 /* spotifyPlayButton.png in Resources */,
 				3DB0335C1B2783A50011E223 /* VenmoLogox2.png in Resources */,
 				3D135FD81B24B31C00A6DEA9 /* GoogleMapsLogo.png in Resources */,
 				3DA1515D1B2A0E8100F674EA /* dialButtonImage.png in Resources */,
