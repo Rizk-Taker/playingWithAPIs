@@ -30,16 +30,17 @@
 		3D6A8ABF1B3353BF00585236 /* spotifySkipButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */; };
 		3D6A8AC21B3353FF00585236 /* spotifyPauseButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */; };
 		3D6A8AC31B3353FF00585236 /* spotifyPlayButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */; };
+		3D6A8AC61B34F46400585236 /* toAndAmountBottomBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AC41B34F46400585236 /* toAndAmountBottomBorder.png */; };
+		3D6A8AC71B34F46400585236 /* toAndAmountTopBorder.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AC51B34F46400585236 /* toAndAmountTopBorder.png */; };
+		3D6A8ACE1B372E2A00585236 /* GoogleMapsLogoTransBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8ACD1B372E2900585236 /* GoogleMapsLogoTransBack.png */; };
+		3D6A8AD01B372E5300585236 /* TwilioLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8ACF1B372E5300585236 /* TwilioLogox2.png */; };
+		3D6A8AD21B372E6800585236 /* SpotifyLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D6A8AD11B372E6800585236 /* SpotifyLogox2.png */; };
 		3DA151561B28F3E300F674EA /* GoogleMapsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */; };
 		3DA151591B29F04400F674EA /* TwilioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA151581B29F04400F674EA /* TwilioViewController.m */; };
 		3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */; };
 		3DA1515D1B2A0E8100F674EA /* dialButtonImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */; };
 		3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033551B2649DF0011E223 /* TwilioLogo.png */; };
-		3DB033581B270D9A0011E223 /* SpotifyLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033571B270D9A0011E223 /* SpotifyLogox2.png */; };
-		3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB033591B2782590011E223 /* GoogleMapsLogox2.png */; };
 		3DB0335C1B2783A50011E223 /* VenmoLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0335B1B2783A50011E223 /* VenmoLogox2.png */; };
-		3DB0335E1B2785180011E223 /* GoogleMapsLogoTransBack.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0335D1B2785180011E223 /* GoogleMapsLogoTransBack.png */; };
-		3DB033601B2788090011E223 /* TwilioLogox2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3DB0335F1B2788090011E223 /* TwilioLogox2.png */; };
 		3DCE32A11B2D187E005C9A92 /* SpotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DCE32A01B2D187E005C9A92 /* SpotifyViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -85,6 +86,11 @@
 		3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifySkipButton.png; sourceTree = "<group>"; };
 		3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifyPauseButton.png; sourceTree = "<group>"; };
 		3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spotifyPlayButton.png; sourceTree = "<group>"; };
+		3D6A8AC41B34F46400585236 /* toAndAmountBottomBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toAndAmountBottomBorder.png; sourceTree = "<group>"; };
+		3D6A8AC51B34F46400585236 /* toAndAmountTopBorder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = toAndAmountTopBorder.png; sourceTree = "<group>"; };
+		3D6A8ACD1B372E2900585236 /* GoogleMapsLogoTransBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GoogleMapsLogoTransBack.png; sourceTree = "<group>"; };
+		3D6A8ACF1B372E5300585236 /* TwilioLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TwilioLogox2.png; sourceTree = "<group>"; };
+		3D6A8AD11B372E6800585236 /* SpotifyLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpotifyLogox2.png; sourceTree = "<group>"; };
 		3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GoogleMapsViewController.h; sourceTree = "<group>"; };
 		3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GoogleMapsViewController.m; sourceTree = "<group>"; };
 		3DA151571B29F04400F674EA /* TwilioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwilioViewController.h; sourceTree = "<group>"; };
@@ -92,11 +98,7 @@
 		3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hangupButtonImage.png; sourceTree = "<group>"; };
 		3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialButtonImage.png; sourceTree = "<group>"; };
 		3DB033551B2649DF0011E223 /* TwilioLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwilioLogo.png; path = ../../Desktop/TwilioLogo.png; sourceTree = "<group>"; };
-		3DB033571B270D9A0011E223 /* SpotifyLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = SpotifyLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/SpotifyLogox2.png"; sourceTree = "<group>"; };
-		3DB033591B2782590011E223 /* GoogleMapsLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/GoogleMapsLogox2.png"; sourceTree = "<group>"; };
 		3DB0335B1B2783A50011E223 /* VenmoLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = VenmoLogox2.png; path = ../../Desktop/VenmoLogox2.png; sourceTree = "<group>"; };
-		3DB0335D1B2785180011E223 /* GoogleMapsLogoTransBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = GoogleMapsLogoTransBack.png; path = ../../Downloads/GoogleMapsLogoTransBack.png; sourceTree = "<group>"; };
-		3DB0335F1B2788090011E223 /* TwilioLogox2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TwilioLogox2.png; path = "../../Downloads/1. Primary Vertical (dark background)/TwilioLogox2.png"; sourceTree = "<group>"; };
 		3DCE329F1B2D187E005C9A92 /* SpotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotifyViewController.h; sourceTree = "<group>"; };
 		3DCE32A01B2D187E005C9A92 /* SpotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotifyViewController.m; sourceTree = "<group>"; };
 		47DB56D538A19F60F457646F /* Pods-playingWithAPIs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playingWithAPIs.release.xcconfig"; path = "Pods/Target Support Files/Pods-playingWithAPIs/Pods-playingWithAPIs.release.xcconfig"; sourceTree = "<group>"; };
@@ -151,29 +153,13 @@
 			children = (
 				3D135FA41B23CBF500A6DEA9 /* AppDelegate.h */,
 				3D135FA51B23CBF500A6DEA9 /* AppDelegate.m */,
-				3D135FC91B23CCF800A6DEA9 /* APIHomeScreenTableViewController.h */,
-				3D135FCA1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m */,
-				3D135FD11B249EE400A6DEA9 /* APIHomeScreenTableViewCell.h */,
-				3D135FD21B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m */,
-				3D135FCE1B23D7FD00A6DEA9 /* API.h */,
-				3D135FCF1B23D7FD00A6DEA9 /* API.m */,
-				3D188EB61B2B539A00E66A0B /* VenmoViewController.h */,
-				3D188EB71B2B539A00E66A0B /* VenmoViewController.m */,
-				3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */,
-				3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */,
-				3DA151571B29F04400F674EA /* TwilioViewController.h */,
-				3DA151581B29F04400F674EA /* TwilioViewController.m */,
-				3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */,
-				3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */,
-				3DCE329F1B2D187E005C9A92 /* SpotifyViewController.h */,
-				3DCE32A01B2D187E005C9A92 /* SpotifyViewController.m */,
-				3D6A8ABC1B3353BF00585236 /* spotifyPreviousButton.png */,
-				3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */,
-				3D6A8AAE1B331AE000585236 /* bossAlbumCover.jpg */,
-				3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */,
-				3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */,
-				3D135FD61B24B2BE00A6DEA9 /* APILogos */,
 				3D135FAD1B23CBF500A6DEA9 /* Main.storyboard */,
+				3D6A8ACA1B34F4A900585236 /* Home Screen */,
+				3D6A8ACC1B34F4CD00585236 /* Venmo */,
+				3D6A8ACB1B34F4BD00585236 /* Google Maps */,
+				3D6A8AC91B34F49400585236 /* Twilio */,
+				3D6A8AC81B34F48600585236 /* Spotify */,
+				3D135FD61B24B2BE00A6DEA9 /* APILogos */,
 				3D135FB01B23CBF500A6DEA9 /* Images.xcassets */,
 				3D135FB21B23CBF500A6DEA9 /* LaunchScreen.xib */,
 				3D135FA71B23CBF500A6DEA9 /* playingWithAPIs.xcdatamodeld */,
@@ -213,15 +199,72 @@
 			children = (
 				3D135FD41B24B2B800A6DEA9 /* SpotifyLogo.png */,
 				3DB0335B1B2783A50011E223 /* VenmoLogox2.png */,
-				3DB0335F1B2788090011E223 /* TwilioLogox2.png */,
-				3DB0335D1B2785180011E223 /* GoogleMapsLogoTransBack.png */,
-				3DB033571B270D9A0011E223 /* SpotifyLogox2.png */,
+				3D6A8ACF1B372E5300585236 /* TwilioLogox2.png */,
+				3D6A8ACD1B372E2900585236 /* GoogleMapsLogoTransBack.png */,
+				3D6A8AD11B372E6800585236 /* SpotifyLogox2.png */,
 				3DB033551B2649DF0011E223 /* TwilioLogo.png */,
 				3D135FD71B24B31C00A6DEA9 /* GoogleMapsLogo.png */,
-				3DB033591B2782590011E223 /* GoogleMapsLogox2.png */,
 				3D135FD91B24B35100A6DEA9 /* VenmoLogo.png */,
 			);
 			name = APILogos;
+			sourceTree = "<group>";
+		};
+		3D6A8AC81B34F48600585236 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				3DCE329F1B2D187E005C9A92 /* SpotifyViewController.h */,
+				3DCE32A01B2D187E005C9A92 /* SpotifyViewController.m */,
+				3D6A8ABC1B3353BF00585236 /* spotifyPreviousButton.png */,
+				3D6A8ABD1B3353BF00585236 /* spotifySkipButton.png */,
+				3D6A8AAE1B331AE000585236 /* bossAlbumCover.jpg */,
+				3D6A8AC01B3353FF00585236 /* spotifyPauseButton.png */,
+				3D6A8AC11B3353FF00585236 /* spotifyPlayButton.png */,
+			);
+			name = Spotify;
+			sourceTree = "<group>";
+		};
+		3D6A8AC91B34F49400585236 /* Twilio */ = {
+			isa = PBXGroup;
+			children = (
+				3DA151571B29F04400F674EA /* TwilioViewController.h */,
+				3DA151581B29F04400F674EA /* TwilioViewController.m */,
+				3DA1515C1B2A0E8100F674EA /* dialButtonImage.png */,
+				3DA1515A1B2A0E7700F674EA /* hangupButtonImage.png */,
+			);
+			name = Twilio;
+			sourceTree = "<group>";
+		};
+		3D6A8ACA1B34F4A900585236 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				3D135FC91B23CCF800A6DEA9 /* APIHomeScreenTableViewController.h */,
+				3D135FCA1B23CCF800A6DEA9 /* APIHomeScreenTableViewController.m */,
+				3D135FD11B249EE400A6DEA9 /* APIHomeScreenTableViewCell.h */,
+				3D135FD21B249EE400A6DEA9 /* APIHomeScreenTableViewCell.m */,
+				3D135FCE1B23D7FD00A6DEA9 /* API.h */,
+				3D135FCF1B23D7FD00A6DEA9 /* API.m */,
+			);
+			name = "Home Screen";
+			sourceTree = "<group>";
+		};
+		3D6A8ACB1B34F4BD00585236 /* Google Maps */ = {
+			isa = PBXGroup;
+			children = (
+				3DA151541B28F3E300F674EA /* GoogleMapsViewController.h */,
+				3DA151551B28F3E300F674EA /* GoogleMapsViewController.m */,
+			);
+			name = "Google Maps";
+			sourceTree = "<group>";
+		};
+		3D6A8ACC1B34F4CD00585236 /* Venmo */ = {
+			isa = PBXGroup;
+			children = (
+				3D188EB61B2B539A00E66A0B /* VenmoViewController.h */,
+				3D188EB71B2B539A00E66A0B /* VenmoViewController.m */,
+				3D6A8AC41B34F46400585236 /* toAndAmountBottomBorder.png */,
+				3D6A8AC51B34F46400585236 /* toAndAmountTopBorder.png */,
+			);
+			name = Venmo;
 			sourceTree = "<group>";
 		};
 		937D8614C27ADF346097CC58 /* Pods */ = {
@@ -328,17 +371,18 @@
 			files = (
 				3D6A8AAF1B331AE000585236 /* bossAlbumCover.jpg in Resources */,
 				3D135FAF1B23CBF500A6DEA9 /* Main.storyboard in Resources */,
-				3DB0335E1B2785180011E223 /* GoogleMapsLogoTransBack.png in Resources */,
 				3D135FD51B24B2B800A6DEA9 /* SpotifyLogo.png in Resources */,
 				3D135FDA1B24B35100A6DEA9 /* VenmoLogo.png in Resources */,
+				3D6A8AD01B372E5300585236 /* TwilioLogox2.png in Resources */,
 				3D6A8ABF1B3353BF00585236 /* spotifySkipButton.png in Resources */,
+				3D6A8AC71B34F46400585236 /* toAndAmountTopBorder.png in Resources */,
+				3D6A8AD21B372E6800585236 /* SpotifyLogox2.png in Resources */,
 				3D135FB41B23CBF500A6DEA9 /* LaunchScreen.xib in Resources */,
 				3DA1515B1B2A0E7700F674EA /* hangupButtonImage.png in Resources */,
 				3DB033561B2649DF0011E223 /* TwilioLogo.png in Resources */,
-				3DB033601B2788090011E223 /* TwilioLogox2.png in Resources */,
 				3D6A8ABE1B3353BF00585236 /* spotifyPreviousButton.png in Resources */,
-				3DB0335A1B2782590011E223 /* GoogleMapsLogox2.png in Resources */,
-				3DB033581B270D9A0011E223 /* SpotifyLogox2.png in Resources */,
+				3D6A8ACE1B372E2A00585236 /* GoogleMapsLogoTransBack.png in Resources */,
+				3D6A8AC61B34F46400585236 /* toAndAmountBottomBorder.png in Resources */,
 				3D6A8AC21B3353FF00585236 /* spotifyPauseButton.png in Resources */,
 				3D135FB11B23CBF500A6DEA9 /* Images.xcassets in Resources */,
 				3D6A8AC31B3353FF00585236 /* spotifyPlayButton.png in Resources */,

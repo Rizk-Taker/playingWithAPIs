@@ -11,9 +11,14 @@
 @interface VenmoViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UITextField *toTextField;
 @property (weak, nonatomic) IBOutlet UITextField *amountTextField;
-@property (weak, nonatomic) IBOutlet UITextField *noteTextField;
-@property (weak, nonatomic) IBOutlet UIButton *sendPaymentButton;
-- (IBAction)sendPaymentButtonTapped:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIImageView *toTextFieldTopBorder;
+@property (weak, nonatomic) IBOutlet UIImageView *toTextFieldBottomBorder;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *venmoSegmentedControl;
+@property (weak, nonatomic) IBOutlet UIImageView *venmoLogo;
+@property (weak, nonatomic) IBOutlet UIButton *venmoPaymentButton;
+@property (weak, nonatomic) IBOutlet UITextView *noteTextView;
+@property (weak, nonatomic) IBOutlet UILabel *noteTextViewPlaceholderLabel;
 
 
 
