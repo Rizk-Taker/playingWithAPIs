@@ -24,6 +24,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-playingWithAPIs-UITextView+Placeholder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-playingWithAPIs-VENCore.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,37 +47,42 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1E82637561A240478449C95D</key>
+		<key>73F8E8EDF147950C5811B606</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>43D9A860A63666F1A1B0DA46</key>
+		<key>75ECCFFC26A533D9DD677394</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4D59A349F6E2CA9C9CD0BD35</key>
+		<key>768D4E854E0FF1585D95013C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>82B51DFF0E086F2B0E840EB0</key>
+		<key>8B8F8A55ADC23FFEBA435F35</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA98375452960007EFE30614</key>
+		<key>8F217E473DC2BD24341612F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>DF90661AB4EB57BA9D844321</key>
+		<key>9434CEB2C6D76E4211F2FF85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E55FF21082EB71C334A13EF3</key>
+		<key>B528EC0446B18D0B7147757F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C99676C47A3F148BC3F56B9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -138,7 +138,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.00" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2yO-Dr-dAZ" userLabel="amountTextField">
                                 <rect key="frame" x="452" y="206" width="46" height="30"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
                             </textField>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W6P-N0-z5s" userLabel="noteTextView">
                                 <rect key="frame" x="162" y="310" width="240" height="128"/>

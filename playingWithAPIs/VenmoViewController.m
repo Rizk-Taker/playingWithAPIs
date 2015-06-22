@@ -8,8 +8,9 @@
 
 #import "VenmoViewController.h"
 #import <Venmo-iOS-SDK/Venmo.h>
+#import "UITextView+Placeholder.h"
 
-@interface VenmoViewController () <UITextViewDelegate>
+@interface VenmoViewController () <UITextViewDelegate,UITextFieldDelegate>
 - (IBAction)venmoPaymentButtonTapped:(id)sender;
 
 @end
@@ -18,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
 //    [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
 //    
 //    if (![Venmo isVenmoAppInstalled]) {
@@ -37,7 +39,7 @@
 //                                 // :(
 //                             }
 //                         }];
-    
+//    
     [self.view removeConstraints:self.view.constraints];
     [self.toTextField removeConstraints:self.toTextField.constraints];
     [self.amountTextField removeConstraints:self.amountTextField.constraints];
@@ -58,6 +60,10 @@
     self.venmoLogo.translatesAutoresizingMaskIntoConstraints = NO;
     self.venmoPaymentButton.translatesAutoresizingMaskIntoConstraints = NO;
     self.noteTextViewPlaceholderLabel.translatesAutoresizingMaskIntoConstraints = NO;
+    
+    self.noteTextViewPlaceholderLabel.hidden =YES;
+    self.noteTextView.placeholder = @"what's it for?";
+
     
     NSLayoutConstraint *toTextFieldTopConstraint =
     [NSLayoutConstraint constraintWithItem:self.toTextField
@@ -402,27 +408,66 @@
     
     [self.view bringSubviewToFront:self.venmoLogo];
     [self.view bringSubviewToFront:self.noteTextView];
+    [self.noteTextView addSubview:self.noteTextViewPlaceholderLabel];
     
-    [self.noteTextView setTextColor:[UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.098/255.0 alpha:0.22]];
+    [self.noteTextView setTextColor:[UIColor blackColor]];
+     self.noteTextView.placeholderColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.098/255.0 alpha:0.22];
     
-
-    // Do any additional setup after loading the view.
+    self.toTextField.delegate = self;
+    self.amountTextField.delegate = self;
+    self.noteTextView.delegate = self;
+    
+    [self.noteTextView setReturnKeyType:UIReturnKeyDefault];
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Specify a transaction type, recipient, amount, and note..."message:@"then tap the Venmo logo to send or request a payment." delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.toTextField) {
+        [self.amountTextField becomeFirstResponder];
+        return YES;
+    }
+    else if (textField == self.amountTextField) {
+        [self.noteTextView becomeFirstResponder];
+        return NO;
+    }
+    return true;
+}
+
+- (void)textViewDidEndEditing:(UITextView *)textView {
+    [self.noteTextView resignFirstResponder];
+    NSLog(@"after resign");
+    
+}
+
+//-(void)settingTransactionType{
+//    if ([self.toTextField hasText]) && ([self.amountTextField hasText]) {
+//        
+//        if (self.venmoSegmentedControl.selectedSegmentIndex ==0) {
+//            self.transactionType = @"payment request";
+//        }
+//        else if (self.venmoSegmentedControl.selectedSegmentIndex ==1) {
+//            self.transactionType = @"payment";
+//            
+//}
+
+//- (void)textViewDidEndEditing:(UITextView *)textView {
+//
+//    NSString *msg = [[NSString alloc]initWithFormat:@"Send %@ a %@ by tapping the Venmo logo below!", self.toTextField.text, self.transactionType];
+//
+//
+//}
+
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 - (IBAction)sendPaymentButtonTapped:(id)sender {
     
@@ -454,7 +499,6 @@
                                     NSLog(@"Transaction failed with error: %@", [error localizedDescription]);
                                 }
                             }];
-
     }
     
     else if (self.venmoSegmentedControl.selectedSegmentIndex ==1) {

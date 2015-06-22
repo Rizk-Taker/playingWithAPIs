@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *venmoPaymentButton;
 @property (weak, nonatomic) IBOutlet UITextView *noteTextView;
 @property (weak, nonatomic) IBOutlet UILabel *noteTextViewPlaceholderLabel;
+@property (strong, nonatomic) NSString *transactionType;
 
 
 

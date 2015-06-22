@@ -6,6 +6,7 @@ target 'playingWithAPIs' do
 pod 'Google-Maps-iOS-SDK', '~> 1.9.2'
 pod 'TwilioSDK', '~>1.2'
 pod 'Venmo-iOS-SDK', '~>1.3'
+pod 'UITextView+Placeholder'
 
 end
 

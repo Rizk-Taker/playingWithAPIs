@@ -30,6 +30,12 @@
 #define COCOAPODS_VERSION_MINOR_TwilioSDK 2
 #define COCOAPODS_VERSION_PATCH_TwilioSDK 3
 
+// UITextView+Placeholder
+#define COCOAPODS_POD_AVAILABLE_UITextView_Placeholder
+#define COCOAPODS_VERSION_MAJOR_UITextView_Placeholder 1
+#define COCOAPODS_VERSION_MINOR_UITextView_Placeholder 0
+#define COCOAPODS_VERSION_PATCH_UITextView_Placeholder 9
+
 // VENCore
 #define COCOAPODS_POD_AVAILABLE_VENCore
 #define COCOAPODS_VERSION_MAJOR_VENCore 3
