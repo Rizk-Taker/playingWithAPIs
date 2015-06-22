@@ -20,26 +20,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
-//    
-//    if (![Venmo isVenmoAppInstalled]) {
-//        [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
-//    }
-//    else {
-//        [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
-//    }
-//    
-//    [[Venmo sharedInstance] requestPermissions:@[VENPermissionMakePayments,
-//                                                 VENPermissionAccessProfile]
-//                         withCompletionHandler:^(BOOL success, NSError *error) {
-//                             if (success) {
-//                                 // :)
-//                             }
-//                             else {
-//                                 // :(
-//                             }
-//                         }];
-//    
+    [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
+    
+    if (![Venmo isVenmoAppInstalled]) {
+        [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
+    }
+    else {
+        [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
+    }
+    
+    [[Venmo sharedInstance] requestPermissions:@[VENPermissionMakePayments,
+                                                 VENPermissionAccessProfile]
+                         withCompletionHandler:^(BOOL success, NSError *error) {
+                             if (success) {
+                                 // :)
+                             }
+                             else {
+                                 // :(
+                             }
+                         }];
+//
     [self.view removeConstraints:self.view.constraints];
     [self.toTextField removeConstraints:self.toTextField.constraints];
     [self.amountTextField removeConstraints:self.amountTextField.constraints];
@@ -437,6 +437,11 @@
     return true;
 }
 
+-(void)transactionAlerts {
+
+
+}
+
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
 {
     NSInteger maxLength = 20;
@@ -455,27 +460,6 @@
     
 }
 
-//-(void)settingTransactionType{
-//    if ([self.toTextField hasText]) && ([self.amountTextField hasText]) {
-//        
-//        if (self.venmoSegmentedControl.selectedSegmentIndex ==0) {
-//            self.transactionType = @"payment request";
-//        }
-//        else if (self.venmoSegmentedControl.selectedSegmentIndex ==1) {
-//            self.transactionType = @"payment";
-//            
-//}
-
-//- (void)textViewDidEndEditing:(UITextView *)textView {
-//
-//    NSString *msg = [[NSString alloc]initWithFormat:@"Send %@ a %@ by tapping the Venmo logo below!", self.toTextField.text, self.transactionType];
-//
-//
-//}
-
-
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -489,6 +473,8 @@
                         completionHandler:^(VENTransaction *transaction, BOOL success, NSError *error) {
                             if (success) {
                                 NSLog(@"Transaction succeeded!");
+                                    UIAlertView *paymentSentAlert = [[UIAlertView alloc]initWithTitle:@"Payment sent!"message:nil delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+                                    [paymentSentAlert show];
                             }
                             else {
                                 NSLog(@"Transaction failed with error: %@", [error localizedDescription]);
@@ -505,10 +491,15 @@
                                          note:self.noteTextView.text
                             completionHandler:^(VENTransaction *transaction, BOOL success, NSError *error) {
                                 if (success) {
-                                    NSLog(@"Transaction succeeded!");
+                                    NSLog(@"Payment request sent!");
+                                    UIAlertView *paymentRequestSentAlert = [[UIAlertView alloc]initWithTitle:@"Payment request sent!"message:nil delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+                                    [paymentRequestSentAlert show];
                                 }
                                 else {
                                     NSLog(@"Transaction failed with error: %@", [error localizedDescription]);
+                                    NSString *errorString = [error localizedDescription];
+                                    UIAlertView *paymentRequestFailedAlert = [[UIAlertView alloc]initWithTitle:@"Transaction failed" message:errorString delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+                                    [paymentRequestFailedAlert show];
                                 }
                             }];
     }
@@ -519,10 +510,15 @@
                                          note:self.noteTextView.text
                             completionHandler:^(VENTransaction *transaction, BOOL success, NSError *error) {
                                 if (success) {
-                                    NSLog(@"Transaction succeeded!");
+                                    NSLog(@"Payment sent!");
+                                    UIAlertView *paymentSentAlert = [[UIAlertView alloc]initWithTitle:@"Payment request sent!"message:nil delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+                                    [paymentSentAlert show];
                                 }
                                 else {
                                     NSLog(@"Transaction failed with error: %@", [error localizedDescription]);
+                                    NSString *errorString = [error localizedDescription];
+                                    UIAlertView *paymentRequestFailedAlert = [[UIAlertView alloc]initWithTitle:@"Transaction failed" message:errorString delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
+                                    [paymentRequestFailedAlert show];
                                 }
                             }];
 
