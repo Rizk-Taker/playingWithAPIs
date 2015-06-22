@@ -82,7 +82,7 @@
                                  relatedBy:NSLayoutRelationEqual
                                     toItem:self.view
                                  attribute:NSLayoutAttributeWidth
-                                multiplier:.85
+                                multiplier:.80
                                   constant:0];
     
     [self.view addConstraint:toTextFieldWidthConstraint];
@@ -435,6 +435,18 @@
         return NO;
     }
     return true;
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
+{
+    NSInteger maxLength = 20;
+    
+    if (textField == self.amountTextField) {
+        maxLength = 5;
+    }
+    
+    NSUInteger length = [textField.text length] + [string length] - range.length;
+    return !(length > maxLength);
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView {
