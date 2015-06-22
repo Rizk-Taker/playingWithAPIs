@@ -11,6 +11,7 @@
 #import "UITextView+Placeholder.h"
 
 @interface VenmoViewController () <UITextViewDelegate,UITextFieldDelegate>
+
 - (IBAction)venmoPaymentButtonTapped:(id)sender;
 
 @end
@@ -18,6 +19,7 @@
 @implementation VenmoViewController
 
 - (void)viewDidLoad {
+
     [super viewDidLoad];
     
     [[Venmo sharedInstance] setDefaultTransactionMethod:VENTransactionMethodAPI];
@@ -39,7 +41,7 @@
                                  // :(
                              }
                          }];
-//
+    
     [self.view removeConstraints:self.view.constraints];
     [self.toTextField removeConstraints:self.toTextField.constraints];
     [self.amountTextField removeConstraints:self.amountTextField.constraints];
@@ -49,7 +51,6 @@
     [self.venmoSegmentedControl removeConstraints:self.venmoSegmentedControl.constraints];
     [self.venmoLogo removeConstraints:self.venmoLogo.constraints];
     [self.venmoPaymentButton removeConstraints:self.venmoPaymentButton.constraints];
-    [self.noteTextViewPlaceholderLabel removeConstraints:self.venmoPaymentButton.constraints];
     
     self.toTextField.translatesAutoresizingMaskIntoConstraints = NO;
     self.amountTextField.translatesAutoresizingMaskIntoConstraints = NO;
@@ -59,12 +60,7 @@
     self.venmoSegmentedControl.translatesAutoresizingMaskIntoConstraints = NO;
     self.venmoLogo.translatesAutoresizingMaskIntoConstraints = NO;
     self.venmoPaymentButton.translatesAutoresizingMaskIntoConstraints = NO;
-    self.noteTextViewPlaceholderLabel.translatesAutoresizingMaskIntoConstraints = NO;
-    
-    self.noteTextViewPlaceholderLabel.hidden =YES;
-    self.noteTextView.placeholder = @"what's it for?";
 
-    
     NSLayoutConstraint *toTextFieldTopConstraint =
     [NSLayoutConstraint constraintWithItem:self.toTextField
                                  attribute:NSLayoutAttributeTop
@@ -82,7 +78,7 @@
                                  relatedBy:NSLayoutRelationEqual
                                     toItem:self.view
                                  attribute:NSLayoutAttributeWidth
-                                multiplier:.80
+                                multiplier:.83
                                   constant:0];
     
     [self.view addConstraint:toTextFieldWidthConstraint];
@@ -361,43 +357,52 @@
                                   constant:280];
     
     [self.view addConstraint:venmoPaymentTopConstraint];
-    
-    NSLayoutConstraint *noteTextViewPlaceholderLabelTopConstraint =
-    [NSLayoutConstraint constraintWithItem:self.noteTextViewPlaceholderLabel
-                                 attribute:NSLayoutAttributeTop
-                                 relatedBy:NSLayoutRelationEqual
-                                    toItem:self.noteTextView
-                                 attribute:NSLayoutAttributeTop
-                                multiplier:1.0
-                                  constant:0];
-    
-    [self.view addConstraint:noteTextViewPlaceholderLabelTopConstraint];
-    
-    NSLayoutConstraint *noteTextViewPlaceholderLabelLeftConstraint =
-    [NSLayoutConstraint constraintWithItem:self.noteTextViewPlaceholderLabel
-                                 attribute:NSLayoutAttributeLeft
-                                 relatedBy:NSLayoutRelationEqual
-                                    toItem:self.noteTextView
-                                 attribute:NSLayoutAttributeLeft
-                                multiplier:1.0
-                                  constant:0];
-    
-    [self.view addConstraint:noteTextViewPlaceholderLabelLeftConstraint];
-    
-    self.noteTextViewPlaceholderLabel.text = @"what's it for?";
-    self.noteTextViewPlaceholderLabel.font = [UIFont fontWithName:@"Arial Rounded MT Bold" size:19];
-    self.noteTextViewPlaceholderLabel.textColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.098/255.0 alpha:0.22];
 
     [self.toTextField becomeFirstResponder];
     
-    self.toTextField.autocorrectionType = UITextAutocorrectionTypeNo;
-    self.amountTextField.autocorrectionType = UITextAutocorrectionTypeNo;
-    self.noteTextView.autocorrectionType = UITextAutocorrectionTypeNo;
+    [self.view bringSubviewToFront:self.venmoLogo];
+    [self.view bringSubviewToFront:self.noteTextView];
     
-    [self.venmoPaymentButton setBackgroundColor:[UIColor colorWithRed:86.0/255.0 green:152.0/255.0 blue:204.0/255.0 alpha:1.0]];
-//
-    [self.venmoSegmentedControl setTintColor:[UIColor colorWithRed:216.0/255.0 green:216.0/255.0 blue:216.0/255.0 alpha:1.0]];
+    self.toTextField.delegate = self;
+    self.amountTextField.delegate = self;
+    self.noteTextView.delegate = self;
+    
+    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Specify a transaction type, recipient, amount, and note..."message:@"then tap the Venmo logo to send or request a payment." delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
+    [alert show];
+    
+    [self configuringToTextField];
+    [self configuringAmountTextField];
+    [self configuringVenmoPaymentButton];
+    [self configuringNoteTextView];
+    [self configuringVenmoSegmentedControl];
+}
 
+#pragma mark - Formatting Methods
+
+-(void)configuringToTextField {
+    self.toTextField.autocorrectionType = UITextAutocorrectionTypeNo;
+}
+
+-(void)configuringAmountTextField {
+    self.amountTextField.autocorrectionType = UITextAutocorrectionTypeNo;
+}
+
+-(void)configuringVenmoPaymentButton {
+        [self.venmoPaymentButton setBackgroundColor:[UIColor colorWithRed:86.0/255.0 green:152.0/255.0 blue:204.0/255.0 alpha:1.0]];
+}
+
+-(void)configuringNoteTextView {
+    [self.noteTextView setTextColor:[UIColor blackColor]];
+    self.noteTextView.placeholderColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.098/255.0 alpha:0.22];
+    [self.noteTextView setReturnKeyType:UIReturnKeyDefault];
+    self.noteTextView.placeholder = @"what's it for?";
+    self.noteTextView.autocorrectionType = UITextAutocorrectionTypeNo;
+}
+
+-(void)configuringVenmoSegmentedControl {
+    
+    [self.venmoSegmentedControl setTintColor:[UIColor colorWithRed:216.0/255.0 green:216.0/255.0 blue:216.0/255.0 alpha:1.0]];
+    
     [self.venmoSegmentedControl setBackgroundColor:[UIColor whiteColor]];
     
     NSDictionary *attributes = [NSDictionary dictionaryWithObjectsAndKeys:
@@ -405,22 +410,6 @@
                                 nil];
     
     [self.venmoSegmentedControl setTitleTextAttributes:attributes forState:UIControlStateNormal];
-    
-    [self.view bringSubviewToFront:self.venmoLogo];
-    [self.view bringSubviewToFront:self.noteTextView];
-    [self.noteTextView addSubview:self.noteTextViewPlaceholderLabel];
-    
-    [self.noteTextView setTextColor:[UIColor blackColor]];
-     self.noteTextView.placeholderColor = [UIColor colorWithRed:0.0/255.0 green:0.0/255.0 blue:0.098/255.0 alpha:0.22];
-    
-    self.toTextField.delegate = self;
-    self.amountTextField.delegate = self;
-    self.noteTextView.delegate = self;
-    
-    [self.noteTextView setReturnKeyType:UIReturnKeyDefault];
-    
-    UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"Specify a transaction type, recipient, amount, and note..."message:@"then tap the Venmo logo to send or request a payment." delegate:nil cancelButtonTitle:@"Okay!" otherButtonTitles:nil, nil];
-    [alert show];
     
 }
 
@@ -435,11 +424,6 @@
         return NO;
     }
     return true;
-}
-
--(void)transactionAlerts {
-
-
 }
 
 - (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string
@@ -464,25 +448,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)sendPaymentButtonTapped:(id)sender {
-    
-    [[Venmo sharedInstance] sendPaymentTo:self.toTextField.text
-                                   amount:self.amountTextField.text.floatValue*100 // this is in cents!
-                                     note:self.noteTextView.text
-                        completionHandler:^(VENTransaction *transaction, BOOL success, NSError *error) {
-                            if (success) {
-                                NSLog(@"Transaction succeeded!");
-                                    UIAlertView *paymentSentAlert = [[UIAlertView alloc]initWithTitle:@"Payment sent!"message:nil delegate:nil cancelButtonTitle:@"Dismiss" otherButtonTitles:nil, nil];
-                                    [paymentSentAlert show];
-                            }
-                            else {
-                                NSLog(@"Transaction failed with error: %@", [error localizedDescription]);
-                            }
-                        }];
-
-}
-
 
 - (IBAction)venmoPaymentButtonTapped:(id)sender {
     if (self.venmoSegmentedControl.selectedSegmentIndex ==0) {
